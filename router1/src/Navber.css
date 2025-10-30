@@ -1,0 +1,19 @@
+.header {
+    background-color: rgb(221, 181, 133);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header ul{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.Link{
+    text-decoration: none;
+}
+.college .Link{
+    text-decoration: none;
+    margin: 10px;
+}
