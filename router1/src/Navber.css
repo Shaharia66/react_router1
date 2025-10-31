@@ -6,7 +6,7 @@
 }
 .header ul{
     display: flex;
-    width: 250px;
+    width: 300px;
     justify-content: space-evenly;
     text-decoration: none;
 }
