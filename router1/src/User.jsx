@@ -11,14 +11,30 @@ function User() {
     ]
 
   return (
+    <div>
     <div style={{marginLeft:"10px"}}>
-      <h1>here we find some user information.</h1>
+      <h1>here we find some user information by ID.</h1>
       {
         userData.map((item)=>(
+          <div style={{marginLeft:"20px"}}>
             <h3><Link to={"/user/"+item.id}>{item.name}</Link></h3>
+          </div>
         ))
       }
     </div>
+
+    <div style={{marginLeft:"10px"}}>
+      <h1>here we find some user information by NAME.</h1>
+      {
+        userData.map((item)=>(
+          <div style={{marginLeft:"20px"}}>
+            <h3><Link to={"/user/"+item.id+"/"+item.name}>{item.name}</Link></h3>
+          </div>
+        ))
+      }
+    </div>
+    </div>
   )
 }
+
 export default User;

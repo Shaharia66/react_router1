@@ -4,12 +4,12 @@ function College() {
 
   return (
     <div style={{textAlign:"center"}} className="college">
-      <h1> this is college .</h1>
+      <h1> this is college information..</h1>
       <h2><Link to="/">go back to home</Link></h2>
       <div>
-        <NavLink className="Link" to="">Student</NavLink>
-        <NavLink className="Link" to="department">Department</NavLink>
-        <NavLink className="Link" to="details">Details</NavLink>
+        <NavLink className="link" to="">Student</NavLink>
+        <NavLink className="link" to="department">Department</NavLink>
+        <NavLink className="link" to="details">Details</NavLink>
 
         <Outlet/>
       </div>

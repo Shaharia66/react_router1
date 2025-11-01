@@ -1,4 +1,4 @@
-import { Link, Outlet, Route, Routes } from "react-router";
+import { NavLink, Outlet, Route, Routes } from "react-router";
 import Home from "./Home";
 import About from "./About";
 import Login from "./Login";
@@ -10,15 +10,16 @@ function Navber() {
     <div>
     <div className="header">
         <div>
-            <Link className="Link" to="/"><h2>LoGo</h2></Link>
+            <NavLink className="NavLink" to="/"><h2>LoGo</h2></NavLink>
         </div>
         <div>
             <ul>
-                <li><Link className="Link" to="/">Home</Link></li>
-                <li><Link className="Link" to="/in/user/about">About</Link> </li>
-                <li><Link className="Link" to="/in/user/login">Login</Link> </li>
-                <li><Link className="Link" to="/college">College</Link></li> 
-                <li><Link className="Link" to="/user">User</Link></li>
+                <li><NavLink className="link" to="/">Home</NavLink></li>
+                <li><NavLink className="link" to="/in/user/about">About</NavLink> </li>
+                <li><NavLink className="link" to="/in/user/login">Login</NavLink> </li>
+                <li><NavLink className="link" to="/college">College</NavLink></li> 
+                <li><NavLink className="link" to="/user">User</NavLink></li>
+                <li><NavLink className="link" to="/user/list">NavLink</NavLink></li>
             </ul>
         </div>
     </div>
@@ -26,5 +27,6 @@ function Navber() {
     </div>
   )
 }
+
 
 export default Navber;

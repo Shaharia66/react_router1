@@ -14,7 +14,7 @@ import Student from './student'
 import Details from './details'
 import Department from './department'
 import User from './User'
-import UserDetail from './UserDetail'
+import UserDetail from './userDetail'
 
 function App() {
 
@@ -35,8 +35,8 @@ function App() {
       <Routes>
         <Route element={<Navber />}>
           <Route path="/" element={<Home />} />
-          <Route path="/user" element={<User/>} />
-          <Route path='/user/:id' element={<UserDetail/>} />
+          <Route path="/user/List?" element={<User/>} />
+          <Route path='/user/:id/:name?' element={<UserDetail/>} />
           <Route path="in">
             <Route path="/in/user">
             <Route path="/in/user/about" element={<About />} />

@@ -6,14 +6,18 @@
 }
 .header ul{
     display: flex;
-    width: 300px;
+    width: 400px;
     justify-content: space-evenly;
     text-decoration: none;
 }
-.Link{
+.link{
     text-decoration: none;
 }
-.college .Link{
+.college .link{
     text-decoration: none;
     margin: 10px;
+}
+.active{
+    font-weight: 800;
+    color:rgb(189, 84, 84);
 }
